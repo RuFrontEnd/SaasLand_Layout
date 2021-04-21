@@ -1140,16 +1140,19 @@
   }
 
   .feature-imgs-2 > img:nth-child(2) {
-    top: 20px;
-    left: 140px;
+    top: auto;
+    bottom: 5%;
+    left: 20%;
   }
 
   .feature-imgs-2 > img:nth-child(3) {
-    top: 250px;
+    top: 60%;
+    left: 70%;
   }
 
   .feature-imgs-2 > img:nth-child(4) {
-    top: 75px;
+    top: auto;
+    bottom: 65%;
     left: 5px;
   }
 
@@ -1246,6 +1249,10 @@
     position: static;
   }
 
+  .introduction-img-shape-3 {
+    bottom: -420px;
+  }
+
   .introduction-txt-warp {
     width: 100%;
     padding-top: 200px;
@@ -1255,7 +1262,7 @@
     margin-top: -150px;
   }
 
-  .introduction-img-shape-1{
+  .introduction-img-shape-1 {
     top: auto;
     bottom: -80%;
   }
@@ -1277,8 +1284,16 @@
     position: static;
   }
 
+  .feature-img-warp-2 {
+    max-width: 90%;
+  }
+
   .feature-img-container-2 {
-    margin-right: 140px;
+    margin-right: 0px;
+  }
+
+  .feature-img-container-2 {
+    margin-right: 0px;
     margin-left: 0px;
   }
 
@@ -1502,6 +1517,11 @@
     transform: translate(150px);
   }
 
+  .introduction-img-shape-3 {
+    bottom: auto;
+    top: 125%;
+  }
+
   .introduction-txt-warp {
     padding-top: 150px;
   }
@@ -1605,45 +1625,45 @@
     line-height: 35px;
   }
 
-  .price-warp-br{
+  .price-warp-br {
     display: none;
   }
 
-  .action-message > h2{
+  .action-message > h2 {
     font-size: 30px;
   }
 
-  .action-container > img:nth-child(2){
+  .action-container > img:nth-child(2) {
     left: -890px;
   }
 
-  .copyRight-warp{
+  .copyRight-warp {
     flex-direction: column;
   }
 
-  .copyRight-br{
+  .copyRight-br {
     display: none;
   }
 
-  .copyRight-warp > p{
+  .copyRight-warp > p {
     text-align: center;
   }
 
-  .copyRight-warp > div{
+  .copyRight-warp > div {
     text-align: center;
     margin: 0px;
     padding: 0px;
   }
 
-  .copyRight-warp > p{
+  .copyRight-warp > p {
     margin-bottom: 8px;
   }
 
-  .copyRight-warp > div > span{
+  .copyRight-warp > div > span {
     padding-right: 10px;
   }
 
-  .copyRight-warp > div > a:nth-child(3){
+  .copyRight-warp > div > a:nth-child(3) {
     padding-right: 0px;
   }
 }
