@@ -1146,7 +1146,7 @@
 
   .feature-imgs-2 > img:nth-child(3) {
     top: 250px;
-    left: 450px;
+    /* left: 450px; */
   }
 
   .feature-imgs-2 > img:nth-child(4) {
@@ -1254,6 +1254,11 @@
 
   .introduction-img-warp {
     margin-top: -150px;
+  }
+
+  .introduction-img-shape-1{
+    top: auto;
+    bottom: -80%;
   }
 
   .introduction-container {
