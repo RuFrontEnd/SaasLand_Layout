@@ -1029,6 +1029,10 @@
   transition: 0.2s ease;
 }
 
+.copyRight-br {
+  display: none;
+}
+
 /* rwd */
 
 @media (max-width: 1250px) {
@@ -1282,6 +1286,7 @@
   .feature-imgs > img:nth-child(2) {
     position: static;
     transform: scale(1);
+    width: 100%;
   }
 
   .feature-txt-container {
@@ -1320,7 +1325,11 @@
   }
 
   .service-cards {
-    height: 334px;
+    height: 87%;
+  }
+
+  .service-cards > div {
+    right: 0px;
   }
 
   .service-cards-1 > img,
@@ -1328,22 +1337,25 @@
   .service-cards-3 > img,
   .service-cards-4 > img {
     position: static;
+    float: right;
   }
 
   .service-cards-1 > img {
-    transform: translate(180px);
+    transform: translate(30px);
   }
 
-  .service-cards-2 > img {
-    transform: translate(238px);
+  .service-cards-2 > img,
+  .service-cards-3 > img,
+  .service-cards-4 > img {
+    transform: translate(12.5px);
   }
 
   .service-cards-3 > img {
-    transform: translate(250px, 18px);
+    transform: translate(12.5px);
   }
 
   .service-cards-4 > img {
-    transform: translate(245px, 25px);
+    transform: translate(12.5px);
   }
 
   .service-cards-container {
@@ -1356,8 +1368,8 @@
   }
 
   .price-cards {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .price-cards-area {
@@ -1431,7 +1443,204 @@
 }
 
 @media (max-width: 768px) {
+  .navBar-wrap {
+    width: 100%;
+  }
+
+  .introduction-warp {
+    width: 100%;
+  }
+
+  .feature-warp {
+    width: 100%;
+  }
+
+  .feature-imgs > img:nth-child(1) {
+    top: auto;
+    bottom: -5%;
+    left: 5%;
+  }
+
+  .feature-imgs > img:nth-child(2) {
+    max-width: 100%;
+  }
+
+  .feature-imgs > img:nth-child(3) {
+    top: auto;
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .feature-warp-2 {
+    width: 100%;
+  }
+
+  .action-message {
+    margin: 0px 103px;
+  }
+
+  .footer-warp {
+    width: 100%;
+  }
+
+  .feature-txt-container {
+    transform: translate(0px, -15px);
+  }
+
+  .feature-txt-container-2 {
+    transform: translate(0px, -15px);
+  }
+
+  .introduction-img-warp {
+    transform: translate(50px);
+  }
+
+  .introduction-img-women {
+    transform: translate(150px);
+  }
+
+  .introduction-txt-warp {
+    padding-top: 150px;
+  }
+
+  .action-message {
+    margin: 0px;
+    max-width: 570px;
+  }
+
+  .footer-warp > div:nth-child(1),
+  .footer-warp > div:nth-child(2),
+  .footer-warp > div:nth-child(3),
+  .footer-warp > div:nth-child(4) {
+    flex: 100%;
+  }
+
+  .footer-warp > div > div > img:nth-child(3) {
+    width: auto;
+  }
+
+  .copyRight-br {
+    display: block;
+  }
+
+  .copyRight-warp > div {
+    margin-right: 50px;
+  }
 }
 
 @media (max-width: 576px) {
+  .introduction-img-warp {
+    transform: translate(0px);
+  }
+
+  .introduction-img-phone {
+    width: 100%;
+  }
+  .introduction-img-women {
+    transform: translate(0px, -75px);
+  }
+
+  .feature-imgs > img:nth-child(1) {
+    left: -3%;
+    max-width: 80%;
+  }
+
+  .feature-imgs > img:nth-child(3) {
+    max-width: 69%;
+  }
+
+  .feature-img-container-2 {
+    margin-right: 0px;
+  }
+
+  .feature-imgs-2 > img:nth-child(2) {
+    max-width: 43%;
+    top: auto;
+    bottom: 0%;
+    left: 35%;
+  }
+
+  .feature-imgs-2 > img:nth-child(3) {
+    top: auto;
+    left: 74%;
+    bottom: 5%;
+  }
+
+  .feature-imgs-2 > img:nth-child(4) {
+    top: auto;
+    bottom: 65%;
+    left: 0%;
+  }
+
+  .feature-txt-container > h2 {
+    line-height: 33px;
+  }
+
+  .feature-txt-container-2 > h2 {
+    line-height: 33px;
+  }
+
+  .service-cards-container {
+    max-width: 100%;
+  }
+
+  .service-warp > h2 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .service-container {
+    padding: 70px 0px;
+  }
+
+  .price-cards-container {
+    max-width: 100%;
+  }
+
+  .price-warp > h2 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .price-warp-br{
+    display: none;
+  }
+
+  .action-message > h2{
+    font-size: 30px;
+  }
+
+  .action-container > img:nth-child(2){
+    left: -890px;
+  }
+
+  .copyRight-warp{
+    flex-direction: column;
+  }
+
+  .copyRight-br{
+    display: none;
+  }
+
+  .copyRight-warp > p{
+    text-align: center;
+  }
+
+  .copyRight-warp > div{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .copyRight-warp > p{
+    margin-bottom: 8px;
+  }
+
+  .copyRight-warp > div > span{
+    padding-right: 10px;
+  }
+
+  .copyRight-warp > div > a:nth-child(3){
+    padding-right: 0px;
+  }
 }
