@@ -116,6 +116,10 @@
   transition: 0.3s;
 }
 
+.hambugar-container {
+  display: none;
+}
+
 .register-SignUp:hover {
   background-color: #00aff0;
   color: white;
@@ -128,7 +132,7 @@
 
 .introduction-container {
   background: linear-gradient(40deg, #1786d8 0%, #00aff0 100%);
-  height: 780px;
+  padding-bottom: 160px;
   justify-content: center;
   box-sizing: border-box;
   overflow: hidden;
@@ -1200,6 +1204,59 @@
 }
 
 @media (max-width: 992px) {
+  .navigator-container {
+    display: none;
+  }
+
+  .register-container {
+    display: none;
+  }
+
+  .hamburger-container {
+    display: block;
+  }
+
+  .hamburger-container > i {
+    transform-origin: 100% 100% 100%;
+    transform: scale(1.5);
+  }
+
+  .navBar-wrap {
+    display: flex;
+    align-items: center;
+    width: 720px;
+    padding: 15px 20px;
+  }
+
+  .introduction-warp {
+    flex-direction: column;
+    width: 720px;
+  }
+
+  .introduction-img-warp {
+    transform: translate(0px);
+  }
+
+  .introduction-img-phone{
+    position: static;
+  }
+
+  .introduction-txt-warp{
+    width: 100%;
+    padding-top: 200px;
+  }
+
+  .introduction-img-warp{
+    margin-top: -150px;
+  }
+
+  .introduction-container{
+    padding-bottom: 70px;
+  }
+
+  .introduction-br{
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
