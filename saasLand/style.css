@@ -1,3 +1,15 @@
+@keyframes womenFloating {
+  0% {
+    top: 228px;
+  }
+  50% {
+    top: 243px;
+  }
+  100% {
+    top: 228px;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -415,18 +427,6 @@
   line-height: 30px;
   margin-bottom: 0px;
   padding-right: 50px;
-}
-
-@keyframes womenFloating {
-  0% {
-    top: 228px;
-  }
-  50% {
-    top: 243px;
-  }
-  100% {
-    top: 228px;
-  }
 }
 
 .feature-txt-container > p {
@@ -1146,7 +1146,6 @@
 
   .feature-imgs-2 > img:nth-child(3) {
     top: 250px;
-    /* left: 450px; */
   }
 
   .feature-imgs-2 > img:nth-child(4) {
@@ -1317,7 +1316,6 @@
   }
 
   .feature-imgs-2 > img:nth-child(1) {
-    /* transform: translate(-150px); */
     position: static;
   }
 
