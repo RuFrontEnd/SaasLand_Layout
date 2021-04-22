@@ -14,36 +14,46 @@
   display: flex;
 }
 
-.container {
-  letter-spacing: 0px;
-  color: #677294;
+.relative {
+  position: relative;
 }
 
-.header {
+.absolute {
+  position: absolute;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fbfbfd;
+  color: #677294;
+  letter-spacing: 0px;
+}
+
+/* navBar */
+.navBar-container {
+  background-color: white;
   position: fixed;
   z-index: 100;
   width: 100%;
   box-shadow: 0px 4px 6px 0px rgb(12 0 46 / 6%);
 }
 
-.navBar-container {
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-}
-
 .navBar-wrap {
   height: 100%;
-  width: 1200px;
+  max-width: 1200px;
+  margin: auto;
   padding: 0px 15px;
   box-sizing: border-box;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-  margin-right: 16px;
-  padding: 5px 0px;
+  margin-right: 1rem;
   align-items: center;
 }
 
@@ -51,6 +61,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .navigator-warp > li {
@@ -128,35 +139,37 @@
   transition: 0.3s;
 }
 
-.hamburger-container {
-  display: none;
-}
-
 .register-SignUp:hover {
   background-color: #00aff0;
   color: white;
   transition: 0.3s;
 }
 
+.hamburger-container {
+  display: none;
+}
+
+/* introduction */
 .introduction {
   background: linear-gradient(40deg, #1786d8 0%, #00aff0 100%);
 }
 
 .introduction-container {
-  background: linear-gradient(40deg, #1786d8 0%, #00aff0 100%);
-  padding-bottom: 160px;
-  justify-content: center;
-  box-sizing: border-box;
   overflow: hidden;
+  justify-content: center;
+  height: 780px;
 }
 
 .introduction-warp {
-  width: 1200px;
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: auto;
   height: 100%;
   flex-direction: row;
 }
 
 .introduction-txt-container {
+  box-sizing: border-box;
   padding: 0px 15px;
   margin-top: 0px;
   flex: 7;
@@ -164,13 +177,7 @@
 
 .introduction-txt-warp {
   position: relative;
-  padding-top: 290.6px;
-}
-
-.introduction-txt-warp > button:hover {
-  background-color: #00aff0;
-  color: white;
-  transition: 0.5s;
+  padding-top: 290px;
 }
 
 .introduction-txt-warp > h2 {
@@ -202,27 +209,24 @@
   transition: 0.5s;
 }
 
-.introduction-img-shape-2 {
-  position: absolute;
-  left: 87px;
-  top: 200px;
-  z-index: 1;
+.introduction-txt-warp > button:hover {
+  background-color: #00aff0;
+  color: white;
+  transition: 0.5s;
 }
 
 .introduction-img-container {
-  position: relative;
+  padding: 0px 15px;
   flex: 5;
 }
 
-.introduction-img-phone {
-  position: absolute;
-  left: 2.5px;
-  z-index: 2;
+.introduction-img-warp {
+  top: 0;
+  left: 20px;
 }
 
 .introduction-img-women {
-  position: absolute;
-  left: 135px;
+  left: 133px;
   animation-name: womenFloating;
   animation-duration: 2s;
   animation-delay: 0s;
@@ -237,18 +241,24 @@
 }
 
 .introduction-img-shape-1 {
-  position: absolute;
   right: 0px;
   top: 0px;
   z-index: 1;
 }
 
-.introduction-img-shape-3 {
-  position: absolute;
-  right: 0;
-  bottom: -87px;
+.introduction-img-shape-2 {
+  top: 200px;
+  left: 260px;
+  z-index: 1;
 }
 
+.introduction-img-shape-3 {
+  right: 0;
+  bottom: -85px;
+  z-index: 1;
+}
+
+/* feature */
 .feature-container {
   background-color: #fbfbfd;
   flex-direction: row;
@@ -1037,7 +1047,7 @@
 
 @media (max-width: 1250px) {
   .navBar-wrap {
-    width: 1140px;
+    max-width: 1140px;
   }
 
   .introduction-warp {
@@ -1074,7 +1084,7 @@
 
 @media (max-width: 1200px) {
   .navBar-wrap {
-    width: 960px;
+    max-width: 960px;
   }
 
   .navigator-warp > li {
@@ -1230,10 +1240,8 @@
   }
 
   .navBar-wrap {
-    display: flex;
-    align-items: center;
-    width: 720px;
-    padding: 15px 20px;
+    max-width: 720px;
+    padding: 20px 20px;
   }
 
   .introduction-warp {
@@ -1462,7 +1470,7 @@
 
 @media (max-width: 768px) {
   .navBar-wrap {
-    width: 100%;
+    max-width: 100%;
   }
 
   .introduction-warp {
